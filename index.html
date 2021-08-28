@@ -92,6 +92,7 @@
      font-size:5vw;
      color:black;
      background:white;
+     display:none;
      padding:2rem;
      border-radius:1rem;
    }
@@ -147,18 +148,17 @@
 
 
    document.onkeypress=(event)=>{
-     alert(event.key);
      if(event.key == 'N' || event.key=='n')
       {
          var temp=window.prompt("Enter your message ::");
-        document.getElementById("#customMsg").innerHTML=temp;
-        document.getElementById("#customMsg").style.display="block";
-        document.getElementById("#ampm").style.display="none";
+        document.getElementById("customMsg").innerHTML=temp;
+        document.getElementById("customMsg").style.display="block";
+        document.getElementById("ampm").style.display="none";
       }
       else if(event.key == 'C' || event.key=='c')
       {
-        document.getElementById("#customMsg").style.display="none";
-        document.getElementById("#ampm").style.display="block";
+        document.getElementById("customMsg").style.display="none";
+        document.getElementById("ampm").style.display="block";
       }
    }
  </script>
