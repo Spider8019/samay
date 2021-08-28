@@ -11,6 +11,7 @@
      width:100vw;
      display:grid;
      place-items:center;
+     overflow:hidden;
    }
    .container>div{
      width:80vw;
@@ -51,6 +52,37 @@ outline:none;}
   color:white;
   font-family:prata;
  }
+   .animationdiv{
+     width:0%;
+     height:15px;
+     border-radius:1rem;
+     background:#00ccff;
+     animation:colorchange 60s ease infinite alternate;
+   }
+   @keyframes colorchange{
+     0%{
+       width:0%;
+       background:#00ccff;
+       
+     }
+      20%{
+       background:#39ff14;
+     }
+     40%{
+
+       background:#39ff14;
+     }
+     60%{
+      background:orange;
+     }
+     80%{
+       background:pink;
+     }
+     100%{
+       background:yellow;
+       width:100%;
+     }
+   }
  </style>
  <script>
   function f()
@@ -112,7 +144,9 @@ outline:none;}
     <div>
         <div style="color:white;font-family:rajdhani;margin-top:30px;font-size:18px;margin-bottom:10px;">SPIDER8019 SAMAY</div></center>
          <p id="time"></p>
-         <center><marquee id="ampm" style="color:white;font-family:prata;font-size:18px;margin-top:-20px;"></marquee></center>
+    
+         <div class="animationdiv"></div>
+         <marquee id="ampm" style="color:white;font-family:prata;font-size:18px;margin-top:-20px;"></marquee>
 
 
         <script>
