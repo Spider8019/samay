@@ -6,6 +6,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <style>
+   .container{
+     height:100vh;
+     width:100vw;
+     display:grid;
+     place-items:center;
+   }
  #time{
   font-size:15vw;
   font-family:prata;
@@ -96,22 +102,23 @@ outline:none;}
  </script>
 </head>
 <body bgcolor="black">
-<center><div style="color:white;font-family:rajdhani;margin-top:30px;font-size:18px;margin-bottom:10px;">SPIDER8019 SAMAY</div></center>
- <p id="time"></p>
- <center><p id="ampm" style="color:white;font-family:prata;font-size:18px;margin-top:-20px;"></p></center>
- 
- 
-<script>
-setInterval(f,1000);
-</script>
-<hr>
-<center><p id="day"></p>
-<p id="dat" style="color:white;font-family:prata;font-size:30px;margin-top:-10px;"></p>
-<hr style="margin-top:-10px;">
-<button onclick="getLocation()" id="but1">Loaction</button>
+  <div class="container">
+      <div style="color:white;font-family:rajdhani;margin-top:30px;font-size:18px;margin-bottom:10px;">SPIDER8019 SAMAY</div></center>
+       <p id="time"></p>
+       <center><p id="ampm" style="color:white;font-family:prata;font-size:18px;margin-top:-20px;"></p></center>
 
-<p id="demo" style="color:white;font-family:rajdhani;"></p>
 
+      <script>
+      setInterval(f,1000);
+      </script>
+      <hr>
+      <center><p id="day"></p>
+      <p id="dat" style="color:white;font-family:prata;font-size:30px;margin-top:-10px;"></p>
+      <hr style="margin-top:-10px;">
+      <button onclick="getLocation()" id="but1">Loaction</button>
+
+      <p id="demo" style="color:white;font-family:rajdhani;"></p>
+  </div>
 <script>
 var x = document.getElementById("demo");
 
@@ -129,6 +136,5 @@ function showPosition(position) {
 }
 </script>
 
-</center>
 </body>
 </html>
